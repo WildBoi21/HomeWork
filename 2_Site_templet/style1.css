@@ -1,0 +1,166 @@
+  .header{  
+  background: url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height:850px; 
+  }
+  
+  .container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height:700px;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  }
+  
+  h1 {
+  color:white;
+  text-align: center;
+    text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+  font-size: 7em;
+  } 
+  
+  .container p {
+  text-align: center;
+  color:white;
+    text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5em;
+  }
+  
+  .container .btn {
+  padding: 12px 24px;
+  text-align: center;
+  background-color:white;
+  color:white;
+  background-color:black;
+  float:center;
+  text-decoration:none;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: border-radius 0.5s ease-in;
+  }
+  
+  .container .btn:hover {
+	 background-color:blue; 
+	 border-radius: 14px;
+  }
+  
+  .nav{
+  margin: 0px 0px 0px;
+  padding: 10px 0px 0px;
+  padding-left: 200px;
+  background-color:black;
+  height:60px;
+  }
+  
+  .container1 {
+  display:inline-block;
+  }
+  
+  li{
+  color:white;
+  display: inline;
+  margin-right: 15px;
+  }
+  
+  .main {
+  background-color:white;
+  padding: 30px 0px 0px;
+  height:300px;
+  }
+  
+  .container2{
+  display:inline-block;
+  text-align: center;
+  }
+  
+  img {
+  float:left;
+  padding: 70px 0px 0px;
+  width: 35%;
+  }
+  
+  .container2 p,h2 {
+  text-align:left;
+  float:right;
+  width: 65%;
+  font-size:18px;
+  font-family: "Montserrat", sans-serif;
+  } 
+  
+  .jumbotron {
+  background: url('images/jumbotronbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height:600px; 
+  }
+  
+  .container3 {
+  display:inline-block;
+  text-align: right;
+  float:right;
+  padding: 200px;
+  }
+  
+  .container3 h3 {
+  font-family: "Montserrat", sans-serif;
+  color:white;
+  font-size: 1.5em;
+  }
+  
+  .container3 p {
+  font-family: "Montserrat", sans-serif;
+  color:white;
+  }
+  
+  .container3 .btn {
+  padding: 12px 24px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color:white;
+  color:white;
+  background-color:black;
+  float:center;
+  text-decoration:none;
+  font-size: 1.5em;
+  border-radius: 4px;
+  transition: border-radius 0.5s ease-in;
+  }
+  
+  .container3 .btn:hover {
+	 background-color:blue;
+     border-radius: 16px;	 
+  }
+  
+  .footer {
+  margin: 0px 0px 0px;
+  padding: 20px 0px 0px;
+  padding-left: 200px;
+  background-color:black;
+  height:50px;
+  }
+  
+  .container4 {
+  display:inline-block;
+  }
+  
+  .container4 p {
+    color:white;
+  display: inline;
+  margin-right: 15px;
+  }
+  
+  
+  
+  
+  
+  
