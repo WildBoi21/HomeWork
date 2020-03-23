@@ -1,0 +1,36 @@
+td {
+    border: 5px solid red;
+}
+
+textarea{
+    border: 3px solid green;
+}
+
+.add{
+    width: 450px;
+    border: 3px double rgba(321, 65, 23, 0.959);
+    padding: 3px;
+    background-color: rgb(452, 216, 121);
+    text-align: left;
+}
+
+.functions {
+    border: 3px double rgba(236, 65, 41, 0.959);
+    padding: 20px;
+    background-color: rgb(420, 223, 514);
+	
+}
+
+.hidden{
+    display: none;
+}
+
+.functions>div{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
