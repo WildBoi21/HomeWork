@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.4.1.js"></script>
+  <script> 
+  $(document).ready(function(){
+	$("h1").css("fontSize","50px");
+	$("p").css("color","red");
+	$("p").css("fontSize","50px");
+	$(".cycle").css("fontStyle","italic");
+	$(".cycle").css("fontSize","50px");
+	$("a").css("fontWeight","bold");
+	$("a").css("fontSize","50px");
+	$(".container1").css("backgroundColor","yellow");
+	$('form *').prop('disabled', true);
+	$('h1').append(" NOW!");
+	
+	
+	//2
+	$("a").prepend("↗️ ");
+	$("a").attr("target","_blank");
+	$("a").each(function() {
+		if ($(this).attr("href").startsWith("http:")==true) 
+		{
+		$(this).attr("href","https" + $(this).attr("href").slice(4));
+		}
+		alert($(this).attr("href"));
+	}); 
+	$("#btn").css("float","right");
+	$("#btn").click(function() {
+		$("a").each(function () { 
+				$(this).text(function (index, text) {    
+						return text.substring(2, text.length);  
+				});
+			});
+		$("a").attr("target","_self");
+		});
+	
+	//3
+	$("#btn2").click(function() {
+		$("#1").fadeOut("slow");
+	 })
+	$("#btn3").click(function() {
+		$("#2").fadeTo("slow","0.255");
+	 })
+	$("#btn4").click(function() {
+		$("#3").slideUp("slow");
+	})
+	$("#btn5").click(function() {
+		$("#4").slideToggle("slow");
+	})
+	$("#btn6").click(function() {
+		$("#5").hide("slow");
+	})
+	
+	$("#btn10").css("margin-left","600px");
+	$("#btn10").click(function() {
+		$(".ajax").load("https://inxaoc.github.io/example/ajax-1.html");
+	})
+	});
+  </script>
+</head>
+<body>
+    <div class="header">
+	  <div class="container">
+		<input type="button" value="Отмена" id="btn">
+		<h1>Тестим JQuery</h1>
+		<p>Треним</p>
+      </div>
+	</div>
+	
+	<div class="jumbotron">
+	  <div class="container1">
+        <h2 class ="cycle">Добрый день !</h2>
+        <a href ="http://vk.com/svn4ez">MyPage</a>
+		<br>
+	</div>
+	<br>
+<form>
+	<table>
+		<caption>Сотрудники отдела поддержки</caption>
+			<tr>
+			<td><input type="text"></td>
+			</tr>
+		<tbody>
+			<tr>
+			<td><input type="password"></td>
+			</tr>
+			<tr>
+			<th><input type="checkbox"></th>
+			</tr>
+		</tbody>
+	</table>
+	<input type="radio" name="gender" value="male" checked> Мужской<br>
+	<input type="radio" name="gender" value="female"> Женский<br>
+	<input type="radio" name="gender" value="other"> Другой<br>
+	<input type="submit">	
+</form>
+    <br>
+	<table border="1" width="60%" cellpadding="5">
+   <tr>
+    <th>Текст</th>
+    <th>Эффект/анимация</th>
+   </tr>
+   <tr>
+    <td id="1">Проверка 1</td>
+    <td><input type="button" value="fadeOut" id="btn2"></td>
+  </tr>
+  <tr>
+    <td id="2">Проверка 2</td>
+    <td><input type="button" value="fadeTo" id="btn3"></td>
+  </tr>
+  <tr>
+    <td id="3">Проверка 3</td>
+    <td><input type="button" value="slideUp" id="btn4"></td>
+  </tr>
+  <tr>
+    <td id="4">Проверка 4</td>
+    <td><input type="button" value="SlideToggle" id="btn5"></td>
+  </tr>
+  <tr>
+    <td id="5">Проверка 5</td>
+    <td><input type="button" value="Hide" id="btn6"></td>
+  </tr>
+  </table>
+  <br>
+  <div class="footer">
+  <input type="button" value="ОБНОВИТЬ" id="btn10">
+  <div class="ajax">
+  </div>
+  </div>
+</body>
+</html>
